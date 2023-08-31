@@ -15,7 +15,7 @@ exports[`Rangeslider specs should render basic slider with defaults 1`] = `
   <div
     className="rangeslider__fill"
     style={
-      Object {
+      {
         "width": "0px",
       }
     }
@@ -27,7 +27,7 @@ exports[`Rangeslider specs should render basic slider with defaults 1`] = `
     onTouchEnd={[Function]}
     onTouchMove={[Function]}
     style={
-      Object {
+      {
         "left": "0px",
       }
     }
@@ -35,9 +35,7 @@ exports[`Rangeslider specs should render basic slider with defaults 1`] = `
   >
     <div
       className="rangeslider__handle-label"
-    >
-      
-    </div>
+    />
   </div>
   <ul
     className="rangeslider__labels"
@@ -60,7 +58,7 @@ exports[`Rangeslider specs should render slider when props passed in 1`] = `
   <div
     className="rangeslider__fill"
     style={
-      Object {
+      {
         "width": "0px",
       }
     }
@@ -72,7 +70,7 @@ exports[`Rangeslider specs should render slider when props passed in 1`] = `
     onTouchEnd={[Function]}
     onTouchMove={[Function]}
     style={
-      Object {
+      {
         "left": "0px",
       }
     }
@@ -80,9 +78,7 @@ exports[`Rangeslider specs should render slider when props passed in 1`] = `
   >
     <div
       className="rangeslider__handle-label"
-    >
-      
-    </div>
+    />
   </div>
   <ul
     className="rangeslider__labels"
