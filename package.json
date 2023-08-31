@@ -125,7 +125,7 @@
     "resize-observer-polyfill": "^1.5.1"
   },
   "peerDependencies": {
-    "react": "^18.2.0"
+    "react": "^16.14.0 || ^17.x || ^18.x"
   },
   "jest": {
     "moduleNameMapper": {
