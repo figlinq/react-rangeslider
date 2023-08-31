@@ -2,7 +2,7 @@ import React from 'react'
 import { configure, shallow, mount } from 'enzyme'
 import renderer from 'react-test-renderer'
 import Slider from '../Rangeslider'
-import Adapter from '@wojtekmaj/enzyme-adapter-react-17'
+import Adapter from 'enzyme-adapter-react-16'
 
 configure({ adapter: new Adapter() })
 
