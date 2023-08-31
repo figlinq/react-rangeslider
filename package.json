@@ -1,5 +1,5 @@
 {
-  "name": "@appigram/react-rangeslider",
+  "name": "@figlinq/react-rangeslider",
   "version": "2.2.19",
   "description": "A lightweight react component that acts as a HTML5 input range slider polyfill",
   "main": "lib/index.js",
@@ -30,7 +30,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/appigram/react-rangeslider.git"
+    "url": "https://github.com/figlinq/react-rangeslider.git"
   },
   "files": [
     "lib",
@@ -46,18 +46,18 @@
     "slider"
   ],
   "author": {
-    "name": "Eugene Sysmanov",
-    "email": "appigram@gmail.com",
-    "url": "https://github.com/appigram"
+    "name": "Figlinq",
+    "email": "info@figlinq.com",
+    "url": "https://github.com/figlinq"
   },
   "engines": {
     "node": ">=4"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/appigram/react-rangeslider/issues"
+    "url": "https://github.com/figlinq/react-rangeslider/issues"
   },
-  "homepage": "https://github.com/appigram/react-rangeslider#readme",
+  "homepage": "https://github.com/figlinq/react-rangeslider#readme",
   "devDependencies": {
     "@babel/cli": "^7.22.10",
     "@babel/core": "^7.22.11",

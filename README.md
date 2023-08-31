@@ -26,6 +26,8 @@
   </a>
 </p>
 
+This is a fork of appigram/react-rangeslider which in turn is a fork of whoisandy/react-rangeslider. The intention is to fix some bugs and otherwise keep it in sync with appigram/react-rangeslider.
+
 ## Installation
 Using `npm` (use `--save` to include it in your package.json)
 
