@@ -23,7 +23,7 @@
     "prebuild": "npm run clean:lib",
     "docs": "npm run clean:docs && npm run build:docs && cpy docs/favicon.ico public/",
     "deploy": "npm run docs && gh-pages -d public",
-    "postpublish": "git push origin master --follow-tags",
+    "postpublish": "git push origin main --follow-tags",
     "minor": "npm version minor && npm publish",
     "major": "npm version major && npm publish",
     "patch": "npm version patch && npm publish"
