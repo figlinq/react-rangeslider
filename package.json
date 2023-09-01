@@ -1,6 +1,6 @@
 {
   "name": "@figlinq/react-rangeslider",
-  "version": "2.2.19",
+  "version": "3.0.0",
   "description": "A lightweight react component that acts as a HTML5 input range slider polyfill",
   "main": "lib/index.js",
   "scripts": {
