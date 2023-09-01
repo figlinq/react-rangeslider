@@ -103,18 +103,41 @@ class Slider extends Component {
 
   /**
    * Attach event listeners to mousemove/mouseup events
+   * @param e - Event object
+   * @return value - Slider value
+   */
+  getValueFromEvent = (e) => {
+    const { target: { classList, dataset } } = e
+    let value = this.position(e)
+
+    if (
+      classList &&
+      classList.contains('rangeslider__label-item') &&
+      dataset.value
+    ) {
+      value = parseFloat(dataset.value)
+    }
+
+    return value
+  }
+
+  /**
+   * Attach event listeners to mousemove/mouseup events
    * @return {void}
    */
   handleStart = e => {
     const { onChangeStart } = this.props
     document.addEventListener('mousemove', this.handleDrag)
     document.addEventListener('mouseup', this.handleEnd)
+
+    const value = this.getValueFromEvent(e)
+
     this.setState(
       {
         active: true
       },
       () => {
-        onChangeStart && onChangeStart(e)
+        onChangeStart && onChangeStart(value, e)
       }
     )
   }
@@ -127,18 +150,10 @@ class Slider extends Component {
   handleDrag = e => {
     e.stopPropagation()
     const { onChange } = this.props
-    const { target: { className, classList, dataset } } = e
+    const { target: { className } } = e
     if (!onChange || className === 'rangeslider__labels') return
 
-    let value = this.position(e)
-
-    if (
-      classList &&
-      classList.contains('rangeslider__label-item') &&
-      dataset.value
-    ) {
-      value = parseFloat(dataset.value)
-    }
+    const value = this.getValueFromEvent(e)
 
     onChange && onChange(value, e)
   }
@@ -149,12 +164,15 @@ class Slider extends Component {
    */
   handleEnd = e => {
     const { onChangeComplete } = this.props
+
+    const value = this.getValueFromEvent(e)
+
     this.setState(
       {
         active: false
       },
       () => {
-        onChangeComplete && onChangeComplete(e)
+        onChangeComplete && onChangeComplete(value, e)
       }
     )
     document.removeEventListener('mousemove', this.handleDrag)
