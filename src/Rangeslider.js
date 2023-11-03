@@ -2,7 +2,6 @@
 import cx from 'classnames'
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import ResizeObserver from 'resize-observer-polyfill'
 import { capitalize, clamp } from './utils'
 
 /**
